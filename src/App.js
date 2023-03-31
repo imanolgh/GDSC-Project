@@ -2,24 +2,16 @@ import logo from "./logo.svg";
 import "./App.css";
 import fapp from "./utils/firebase";
 import React from "react";
+import SignIn from "./Auth/signin";
+import Signup from "./Auth/signup";
+import CheckUser from "./Auth/checkUser";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SignIn/>
+      <Signup/>
+      <CheckUser/>
     </div>
   );
 }
