@@ -1,0 +1,34 @@
+{
+  "jobs": [
+    {
+      "title": "Software Developer",
+      "company": "Meta",
+      "location": "Menlo Park, CA",
+      "postedDate": "Mar 28, 2023",
+      "description": "Meta is seeking an experienced Software Engineer to join the Software Engineering (Infrastructure) team.",
+      "link": "https://www.metacareers.com/v2/jobs/826483008365067/",
+      "industry": "Technology",
+      "image": null
+    },
+    {
+      "title": "Senior Site Reliability Engineer",
+      "company": "Apple",
+      "location": "New York, NY",
+      "postedDate": "Mar 12, 2023",
+      "description": "Apple Media Content SRE is responsible for running a diverse set of services manage all media content across products like the App Store, Apple Music and, Apple TV+.",
+      "link": "https://jobs.apple.com/en-us/details/200461354/senior-site-reliability-engineer?team=SFTWR",
+      "industry": "Technology",
+      "image": null
+    },
+    {
+      "title": "Crew Team Member",
+      "company": "McDonald's",
+      "location": "St. Louis, MO",
+      "postedDate": "Apr 1, 2023",
+      "description": "A Crew Team Member at McDonald's is more than just a paycheck - it's a chance to gain life skills and grow as an individual.",
+      "link": "https://mcdonalds.dejobs.org/st-louis-mo/crew-team-member-13-15hr/F7E7ABC8292A4D90BEF5C34E4A156986/job/",
+      "industry": "Food and Services",
+      "image": null
+    }
+  ]
+}
