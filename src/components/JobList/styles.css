@@ -1,0 +1,5 @@
+.job-list-container {
+    background-color: lightpink;
+    flex: 4;
+    height:100%;
+}

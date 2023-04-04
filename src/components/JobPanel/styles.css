@@ -1,0 +1,10 @@
+.job-panel-container {
+    background-color: lightblue;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    
+}
