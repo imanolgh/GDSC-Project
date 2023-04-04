@@ -6,13 +6,13 @@ import JobDetails from "../JobDetails";
 import "./styles.css";
 
 export default function JobPanel() {
-  const [currIdx, setIdx] = useState(0);
   const jobs = data.jobs;
+  const [currJob, setJob] = useState(jobs[0]);
 
   return (
     <div class="job-panel-container">
-      <JobList jobs={jobs}></JobList>
-      <JobDetails job={jobs[currIdx]}></JobDetails>
+      <JobList jobs={jobs} setJob={setJob}></JobList>
+      <JobDetails job={currJob}></JobDetails>
     </div>
   );
 }
