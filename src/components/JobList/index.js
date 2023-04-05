@@ -8,7 +8,7 @@ export default function JobList({ jobs, setJob }) {
       {jobs.map((j) => (
         <>
           <JobThumbnail key={j.id} job={j} onClick={() => setJob(j)} />
-          <div class="t-divider" />
+          <div key={j.id + "divider"} class="t-divider" />
         </>
       ))}
     </div>

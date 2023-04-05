@@ -6,11 +6,26 @@ import JobDetails from "../JobDetails";
 import { doc, getDocs, collection, query, setDoc } from "firebase/firestore";
 import { db } from "../../utils/firebase";
 import "./styles.css";
+import { useNavigate } from "react-router-dom";
+import { auth } from "../../utils/firebase";
+import { signOut } from "firebase/auth";
 
 export default function JobPanel() {
   // const jobs = data.jobs;
   const [jobList, setJobList] = useState([data.jobs[0]]);
   const [currJob, setJob] = useState(data.jobs[0]);
+
+  const navigate = useNavigate();
+
+  function logout() {
+    signOut(auth)
+      .then(() => {
+        navigate("/");
+      })
+      .catch((error) => {
+        console.log("failed to sign user out " + error);
+      });
+  }
 
   useEffect(() => {
     async function f() {
@@ -24,7 +39,7 @@ export default function JobPanel() {
         setJobList(fetchedData);
         setJob(fetchedData[0]);
       }
-      console.log(fetchedData);
+      // console.log(fetchedData);
       console.log("Success fetching Job List");
     }
     f();
@@ -42,6 +57,9 @@ export default function JobPanel() {
 
   return (
     <div class="job-panel-container">
+      <button id="logout" onClick={logout}>
+        Log out
+      </button>
       <JobList jobs={jobList} setJob={setJob}></JobList>
       <JobDetails job={currJob}></JobDetails>
     </div>
