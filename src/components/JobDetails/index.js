@@ -2,6 +2,9 @@ import React from "react";
 import "./styles.css";
 
 export default function JobDetails({ job }) {
+  if (job == null) {
+    return <></>;
+  }
   function handleRedirect() {
     // window.location.href = job.link;
     window.open(job.link);
